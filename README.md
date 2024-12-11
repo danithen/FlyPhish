@@ -36,11 +36,6 @@ Before using FlyPhish, ensure you have the following:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Set up your VirusTotal API key in the script:
-
-   Replace `your_virustotal_api_key_here` in the `API_KEY` variable with your VirusTotal API key.
-
 ## Usage
 
 ### Basic Usage
