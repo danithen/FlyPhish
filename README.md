@@ -15,7 +15,6 @@ FlyPhish is a Python-based tool for scanning email attachments, sender IPs, and 
 Before using FlyPhish, ensure you have the following:
 
 - **Python 3.8+**
-- A valid [VirusTotal API key](https://www.virustotal.com/).
 - Microsoft Outlook installed (for email integration).
 - Required Python libraries:
   - `requests`
