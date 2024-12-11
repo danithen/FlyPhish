@@ -1,0 +1,5 @@
+requests==2.31.0
+colorama==0.4.6
+pywin32==306
+argparse==1.4.0
+shutilwhich==2.0.0  # May be used implicitly by shutil
