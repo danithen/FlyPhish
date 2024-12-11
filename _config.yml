@@ -1,5 +1,5 @@
-title: My Website
-description: A GitHub Pages site with the Minima theme
+title: FlyPhish
+description: 
 baseurl: "" # Leave this empty for user sites; add "/repo-name" for project sites
-url: "https://username.github.io" # Replace with your GitHub Pages URL
+url: "https://username.github.io/FlyPhish" # Replace with your GitHub Pages URL
 theme: minima
