@@ -37,15 +37,9 @@ Before using FlyPhish, ensure you have the following:
    ```bash
    pip install -r requirements.txt
    ```
-## Usage
+3. Set up your VirusTotal API key in the script:
 
-### Basic Usage
-
-Run the script to scan a specified number of emails from Outlook:
-
-```bash
-python flyphish.py --amount 10
-```
+   Replace `your_virustotal_api_key_here` in the `API_KEY` variable with your VirusTotal API key.
 
 ### Options
 
