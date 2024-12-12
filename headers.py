@@ -3,9 +3,6 @@ import sqlite3
 import os
 from sqlite_utils import Database
 
-#username=input("Username:")
-#passwd=input("Passwd:")
-
 #init the flyphish.db database
 #db = Database(sqlite3.connect("flyphish.db"))
 #db["email_headers"].create({
@@ -25,16 +22,16 @@ unread_messages = messages.Restrict("[Unread] = True")
 
 print(f"Total Inbox Items: {inbox.Items.Count}")
 header_lines = ('')
-output_dir = r
+#output_dir = r
 for message in unread_messages:
-    #print("start")
-    #print (f"Sender: {message.Sender}")
+    print("TEST START")
+    print (f"Sender: {message.Sender}")
     headers = message.PropertyAccessor.GetProperty("http://schemas.microsoft.com/mapi/proptag/0x007D001E")
     header_lines = headers.split("\n")
     formatted_headers = {}
     
-    for attachment in message.Attachments:
-        attachment.SaveAsFile(os.path.join(output_dir, attachment.FileName))
+    #for attachment in message.Attachments:
+    #    attachment.SaveAsFile(os.path.join(output_dir, attachment.FileName))
         
     for line in header_lines:
         if ': ' in line:
@@ -46,16 +43,3 @@ for message in unread_messages:
 
     for key, value in formatted_headers.items():
         print(f"{key}: {value}")
-    
-
-    #email_data = {
-    #    "id": message.EntryID,  # Use EntryID as a unique identifier
-    #    "Return-Path": formatted_headers.get('Return-Path', ''),
-    #    "From": formatted_headers.get('From', ''),
-    #    "Authentication-Results": formatted_headers.get('Authentication-Results', ''),
-    #    "Subject": formatted_headers.get('Subject', ''),
-    #    "To": formatted_headers.get('To', '')
-    #}
-#    db['email_headers'].insert(email_data)
-#db.connection.commit()
-#db.connection.close()
