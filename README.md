@@ -16,6 +16,7 @@ Before using FlyPhish, ensure you have the following:
 
 - **Python 3.8+**
 - Microsoft Outlook installed (for email integration).
+- A valid [VirusTotal API key](https://www.virustotal.com/).
 - Required Python libraries:
   - `requests`
   - `colorama`
